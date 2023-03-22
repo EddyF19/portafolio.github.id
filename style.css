@@ -23,6 +23,7 @@
   
   body {
     margin: 0;
+    
   }
   
   /**
@@ -354,12 +355,18 @@ body
 {   
     background: url(./img/vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg) 
     no-repeat center center/cover;
-    height: 100vmin;
+    min-height: 100vh;
+    margin-bottom: 100px;
 }
 
 h1, h2, h3, h4, h5, p
 {
     color: whitesmoke;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 h1
@@ -399,6 +406,13 @@ div.card
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+div.card:hover
+{
+  transform: scale(1.08);
+  transition: 0.4s;
+
 }
 
 .image, .description
